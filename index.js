@@ -25,6 +25,18 @@ app.use(bodyParser.json());
     app.get("/", (req, res) => {
         res.render("index.ejs");
     })
+    app.get("/filme", (req, res) => {//passando id do filme para mostrar informações do mesmo
+        res.render("filme.ejs");
+    })
+    app.get("/login", (req, res) => {
+        res.render("login.ejs");
+    })
+    app.get("/signup", (req, res) => {
+        res.render("signup.ejs");
+    })
+    app.get("/ver", (req, res) => {
+        res.render("user/assistir.ejs");
+    })
 
 // End Router
 app.listen(3000, () => {

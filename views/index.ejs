@@ -1,13 +1,65 @@
 <%- include ("partials/header.ejs") %>
 <%- include ("partials/homenavbar.ejs") %>
+
 <body>
-        <section class="section">
-            <div class="container">
-            <h1 class="title">
-                APP base
-            </h1>
-           
-        </section>
+    <div class="jumbotron justify-contet-center" style="margin-bottom:0px; border-radius: 0; padding: 5px; ">
+        <div class="bg-ligth text-center mb-5">
+            <div class="container mt-2 mb-2 justify-content">
+                  <div class="card-header bg-dark">
+                    <ul class="nav nav-tabs card-header-tabs text-ligth mr-auto justify-content-center">
+                      <li class="nav-item text-info">
+                        <a class="nav-link active " href="/user/index">Mais vistos</a>
+                      </li>
+                      
+                      <li class="nav-item text-ligth"> 
+                        <a class="nav-link " href="/user/recente" style="text-decoration: none; color: grey;">Lançamentos</a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                 <div class="card-body" style="background: white;">
+                    <div class="container">
+                        <div class="row row-cols-3">
+                          <div class="col">
+                            <div class="card bg-dark text-white mb-3 ">
+                                <a href="">
+                                    <img src="\img\hobbit.jpg" style="max-height: 25em; min-height: 10em;" class="card-img"></a>
+                              </div>
+                          </div>
+                          <div class="col">
+                            <div class="card bg-dark text-white mb-3  ">
+                                <a href="">
+                                    <img src="\img\hobbit2.jpg" style="max-height: 25em; min-height: 10em;" class="card-img"></a>
+                              </div>
+                          </div>
+                          <div class="col">
+                            <div class="card bg-dark text-white mb-3 ">
+                                <a href="">
+                                    <img src="\img\hobbit3.jpg" style="max-height: 25em; min-height: 10em;" class="card-img"></a>
+                              </div>
+                          </div>
+                          <div class="col">
+                            <div class="card bg-dark text-white mb-3 ">
+                                <a href="">
+                                <img src="\img\logo.png" style="height: 100%;" class="card-img"></a>
+                              </div>
+                          </div>
+                          <div class="col">
+                            <div class="card bg-dark text-white mb-3 ">
+                                <img src="\img\logo.png" style="height: 100%;" class="card-img">
+                              </div>
+                          </div>
+                          <div class="col">Column</div>
+                          <div class="col">Column</div>
+                          <div class="col">Column</div>
+                        </div>
+                      </div> 
+                 </div> 
+ 
+          </div>
+        </div>
+    </div>
+    
 </body>
 
 <%- include ("partials/footer.ejs") %>

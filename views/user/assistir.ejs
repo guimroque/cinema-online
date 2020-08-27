@@ -1,0 +1,48 @@
+<%- include ("../partials/header.ejs") %>
+<%- include ("../partials/homenavbar.ejs") %>
+
+
+
+<head>
+    <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+  
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
+<!-- City -->
+
+  </head>
+
+      <div id="center" class="embed-responsive embed-responsive-1by1 justify-content-center">
+        <video
+          id="center"
+          class=" video video-js"
+          controls
+          preload="auto"
+          poster=""
+          data-setup="{}"
+          style="width: 80em; height:50em;" 
+        >
+          <source src="\video\video.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+  <body>
+    
+    <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+  </body>
+<style>
+  #center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: grey;
+  }
+  .video{
+    width: 1300;
+    min-height: 400;
+    height: 650;
+  }
+</style>
+
+<%- include ("../partials/footer.ejs") %>
